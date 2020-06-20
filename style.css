@@ -101,7 +101,7 @@ a {
     padding-bottom: 25px;
 
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 10;
 }
 
@@ -201,17 +201,14 @@ a {
 }
 
 .pictures__slide {
-    display: none;
     position: relative;
     animation: 0.5s ease-in-out;
     margin: 0 auto;
 
     width: 797px;
-    height: 483px;
-}
+    height: 517px;
 
-.pictures__wrapper {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -235,8 +232,6 @@ a {
     left: 0;
     width: 240px;
     height: 483px;
-    background-image: url("assets/img/slider/shadow--vertical.png");
-    background-repeat: no-repeat;
 }
 
 .iphone__phone--vertical {
@@ -247,8 +242,6 @@ a {
     left: 0;
     width: 215px;
     height: 458px;
-    background-image: url("assets/img/slider/phone--vertical.png");
-    background-repeat: no-repeat;
 }
 
 .iphone__screen--vertical {
@@ -258,8 +251,6 @@ a {
     left: 11px;
     width: 194px;
     height: 339px;
-    background-image: url("assets/img/slider/screen--vertical.jpg");
-    background-repeat: no-repeat;
 }
 
 .iphone__shadow--horizontal {
@@ -269,20 +260,16 @@ a {
     left: 0;
     width: 483px;
     height: 240px;
-    background-image: url("assets/img/slider/shadow--horizontal.png");
-    background-repeat: no-repeat;
 }
 
 .iphone__phone--horizontal {
     cursor: pointer;
     position: absolute;
     z-index: 2;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 458px;
     height: 215px;
-    background-image: url("assets/img/slider/phone--horizontal.png");
-    background-repeat: no-repeat;
 }
 
 .iphone__screen--horizontal {
@@ -292,24 +279,16 @@ a {
     left: 57px;
     width: 339px;
     height: 194px;
-    background-image: url("assets/img/slider/screen--horizontal.jpg");
-    background-repeat: no-repeat;
-}
-
-.iphone__screen--hidden {
-    background-image: none;
 }
 
 .pictures__slide--2 {
-    background-image: url("assets/img/slider/iphones.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 483px;
+    display: none;
+    justify-content: center;
 }
 
 .active,
 .next {
-    display: block;
+    display: flex;
 }
 
 .next {
