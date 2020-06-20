@@ -1,31 +1,17 @@
 'use strict';
 
 (function() {
-    const navigation = document.querySelector('.page-header__navigation-menu');
-    const linkList = navigation.querySelectorAll('.navigation-menu__link');
-
-    function changeColorByClick(evt) {
-        if (evt.target.classList.contains('navigation-menu__link')) {
-            for (let link of linkList) {
-                if (link.classList.contains('navigation-menu__link--current')) {
-                    link.classList.remove('navigation-menu__link--current');
-                    break;
-                }
-            }
-            evt.target.classList.add('navigation-menu__link--current');
-        }
-    }
-    navigation.addEventListener('click', changeColorByClick);
+    const linkList = document.querySelectorAll('.navigation-menu__link');
+    const sections = document.querySelectorAll('[id]');
 
     function changeColorByScroll() {
         const currentPositionY = window.scrollY;
-        const tagsWithId = document.querySelectorAll('[id]');
 
-        tagsWithId.forEach(tag => {
-            if (tag.offsetTop - 96 <= currentPositionY && tag.offsetTop + tag.offsetHeight - 96 > currentPositionY) {
+        sections.forEach(section => {
+            if (section.offsetTop - 96 <= currentPositionY && section.offsetTop + section.offsetHeight - 96 > currentPositionY) {
                 linkList.forEach(link => {
                     link.classList.remove('navigation-menu__link--current');
-                    if (tag.getAttribute('id') === link.getAttribute('href').substring(1)) {
+                    if (section.getAttribute('id') === link.getAttribute('href').substring(1)) {
                         link.classList.add('navigation-menu__link--current');
                     }
                 });
@@ -96,9 +82,9 @@
 
     function switchScreen(evt) {
         if (evt.target.classList.contains('iphone__phone--vertical')) {
-            verticalScreen.classList.toggle('iphone__screen--hidden');
+            verticalScreen.classList.toggle('hidden');
         } else {
-            horizontalScreen.classList.toggle('iphone__screen--hidden');
+            horizontalScreen.classList.toggle('hidden');
         }
     }
 
