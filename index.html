@@ -38,24 +38,24 @@
     <section class="slider section" id="home">
         <div class="container">
             <div class="slider__wrapper">
-                <h2 class="visually-hidden">Image Gallery</h2>
+                <h2 class="slider__headline visually-hidden">Image Gallery</h2>
                 <button class="slider__arrow slider__arrow--previous" type="button" aria-label="previous"></button>
                 <div class="slider__pictures">
                     <div class="pictures__slide pictures__slide--1 active">
-                        <div class="pictures__wrapper">
-                            <div class="pictures__iphone pictures__iphone--vertical">
-                                <div class="iphone__screen iphone__screen--vertical"></div>
-                                <div class="iphone__phone iphone__phone--vertical"></div>
-                                <div class="iphone__shadow iphone__shadow--vertical"></div>
-                            </div>
-                            <div class="pictures__iphone pictures__iphone--horizontal">
-                                <div class="iphone__screen iphone__screen--horizontal"></div>
-                                <div class="iphone__phone iphone__phone--horizontal"></div>
-                                <div class="iphone__shadow iphone__shadow--horizontal"></div>
-                            </div>
+                        <div class="pictures__iphone pictures__iphone--vertical">
+                            <img class="iphone__screen iphone__screen--vertical" src="/assets/img/slider/screen--vertical.jpg" alt="Vertical screen">
+                            <img class="iphone__phone iphone__phone--vertical" src="/assets/img/slider/phone--vertical.png" alt="Vertical phone">
+                            <img class="iphone__shadow iphone__shadow--vertical" src="/assets/img/slider/shadow--vertical.png" alt="Vertical shadow">
+                        </div>
+                        <div class="pictures__iphone pictures__iphone--horizontal">
+                            <img class="iphone__screen iphone__screen--horizontal" src="/assets/img/slider/screen--horizontal.jpg" alt="Horizontal screen">
+                            <img class="iphone__phone iphone__phone--horizontal" src="/assets/img/slider/phone--horizontal.png" alt="Horizontal screen">
+                            <img class="iphone__shadow iphone__shadow--horizontal" src="/assets/img/slider/shadow--horizontal.png" alt="Horizontal screen">
                         </div>
                     </div>
-                    <div class="pictures__slide pictures__slide--2"></div>
+                    <div class="pictures__slide pictures__slide--2">
+                        <img class="pictures__iphones" src="/assets/img/slider/iphones.png" alt="Iphones">
+                    </div>
                 </div>
                 <button class="slider__arrow slider__arrow--next" type="button" aria-label="next"></button>
             </div>
@@ -118,7 +118,7 @@
 
     <section class="portfolio section" id="portfolio">
         <div class="container">
-            <h2 class="portfolio__headline">Portfolio</h3>
+            <h2 class="portfolio__headline">Portfolio</h2>
             <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <ul class="portfolio__button-list">
                 <li><button class="portfolio__button portfolio__button--active">All</button></li>
@@ -127,29 +127,29 @@
                 <li><button class="portfolio__button">Artwork</button></li>
             </ul>
             <ul class="portfolio__picture-list">
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/1.jpg" alt="Picture 1" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/2.jpg" alt="Picture 2" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/3.jpg" alt="Picture 3" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/4.jpg" alt="Picture 4" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/5.jpg" alt="Picture 5" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/6.jpg" alt="Picture 6" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/7.jpg" alt="Picture 7" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/8.jpg" alt="Picture 8" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/9.jpg" alt="Picture 9" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/10.jpg" alt="Picture 10" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/11.jpg" alt="Picture 11" width="220px" height="187px"></li>
-                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/12.jpg" alt="Picture 12" width="220px" height="187px"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/1.jpg" alt="Picture 1" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/2.jpg" alt="Picture 2" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/3.jpg" alt="Picture 3" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/4.jpg" alt="Picture 4" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/5.jpg" alt="Picture 5" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/6.jpg" alt="Picture 6" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/7.jpg" alt="Picture 7" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/8.jpg" alt="Picture 8" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/9.jpg" alt="Picture 9" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/10.jpg" alt="Picture 10" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/11.jpg" alt="Picture 11" width="220" height="187"></li>
+                <li class="portfolio__item"><img class="portfolio__picture" src="assets/img/portfolio/12.jpg" alt="Picture 12" width="220" height="187"></li>
             </ul>
         </div>
     </section>
 
     <section class="about section" id="about">
         <div class="container">
-            <h2 class="about__headline">About Us</h3>
+            <h2 class="about__headline">About Us</h2>
             <p class="about__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <ul class="about__person-list">
                 <li class="about__person">
-                    <img class="person__photo" src="assets/img/about/adam-jensen.jpg" alt="Adam Jensen photo" width="300px" height="300px">
+                    <img class="person__photo" src="assets/img/about/adam-jensen.jpg" alt="Adam Jensen photo" width="300" height="300">
                     <h3 class="person__name">Adam Jensen</h3>
                     <p class="person__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     <ul class="person__social-icons-list">
@@ -160,7 +160,7 @@
                     </ul>
                 </li>
                 <li class="about__person">
-                    <img class="person__photo" src="assets/img/about/desmond-miles.jpg" alt="Desmond Miles photo" width="300px" height="300px">
+                    <img class="person__photo" src="assets/img/about/desmond-miles.jpg" alt="Desmond Miles photo" width="300" height="300">
                     <h3 class="person__name">Desmond Miles</h3>
                     <p class="person__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <ul class="person__social-icons-list">
@@ -171,7 +171,7 @@
                     </ul>
                 </li>
                 <li class="about__person">
-                    <img class="person__photo" src="assets/img/about/scolara-visari.jpg" alt="Scolara Visari photo" width="300px" height="300px">
+                    <img class="person__photo" src="assets/img/about/scolara-visari.jpg" alt="Scolara Visari photo" width="300" height="300">
                     <h3 class="person__name">Scolara Visari</h3>
                     <p class="person__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     <ul class="person__social-icons-list">
@@ -225,6 +225,7 @@
     </footer>
 
     <section class="modal hidden">
+        <h2 class="modal__headline visually-hidden">Modal Window</h2>
         <p class="modal__result">Message was sent</p>
         <p class="modal__subject"></p>
         <p class="modal__description"></p>
