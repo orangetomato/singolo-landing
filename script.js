@@ -22,7 +22,7 @@
 })();
 
 (function() {
-    const slider = document.querySelector('.slider');
+    const slider = document.querySelector('.page-main__slider');
     const items = document.querySelectorAll('.pictures__slide');
     let currentItem = 0;
     let isEnabled = true;
@@ -63,14 +63,14 @@
     document.querySelector('.slider__arrow--previous').addEventListener('click', function() {
         if (isEnabled) {
             previousItem(currentItem);
-            slider.classList.toggle('slider--blue');
+            slider.classList.toggle('page-main__slider--blue');
         }
     });
 
     document.querySelector('.slider__arrow--next').addEventListener('click', function() {
         if (isEnabled) {
             nextItem(currentItem);
-            slider.classList.toggle('slider--blue');
+            slider.classList.toggle('page-main__slider--blue');
         }
     });
 })();
